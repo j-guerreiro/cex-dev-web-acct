@@ -1,0 +1,79 @@
+* {
+    margin: 0 auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.conteiner-janela {
+    margin-top: 50px;
+    position: relative;
+    width: 607px;
+    height: 495px;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(35, 41, 41);
+    color: white;
+    border-radius: 1.5mm;
+    box-shadow: 3px 5px 10px 5px rgb(126, 153, 126);
+
+}
+
+.conteiner-titulo {
+    
+    position: relative;
+    font-weight: 400;
+    align-self: center;
+    font-size: 14px;
+    
+}
+
+.conteiner-display {
+    
+    position: relative;
+    width: 595px;
+    height: 50px;
+    border-style: solid;
+    border-width: 0.1mm;
+    border-color: rgb(97, 96, 96);
+    border-radius: 1%;
+    background-color: rgb(16, 19, 19);
+    color: white;
+    font-weight: 800;
+    font-size: 25px;
+}
+.conteiner-display #resultado {
+    position: relative;
+    text-align: end;
+    right: 5px;
+    top: 10px;
+}
+
+.conteiner-botoes {
+    position: relative;
+    border-style: solid;
+    border-width: 0.5mm;
+    border-color: grey;
+    border-radius: 1%;
+    width: 120px;
+    height: 60px;
+    background-color: rgb(50, 59, 59);
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    
+    
+}
+
+.conteiner-botoes:hover {
+
+    border-color: rgb(61, 203, 247);
+
+}
+
+.conteiner-botao {
+    position: relative;
+    top: 5px;
+}
+
