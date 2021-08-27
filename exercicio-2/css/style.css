@@ -1,79 +1,110 @@
 * {
-    margin: 0 auto;
+    margin: 0px;
+    padding: 0px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/img/archlinux2.png);
 }
 
 .conteiner-janela {
-    margin-top: 50px;
+    left: 1vw;
     position: relative;
-    width: 607px;
-    height: 495px;
-    display: flex;
-    flex-flow: row wrap;
-    background-color: rgb(35, 41, 41);
+    flex-grow: 1;
+    top: 8vh;
+    bottom: 8vh;
+    position: relative;
+    width: 98vw;
+    height: 67vh;
+    background-color: rgb(43, 43, 49);
     color: white;
     border-radius: 1.5mm;
-    box-shadow: 3px 5px 10px 5px rgb(126, 153, 126);
+    box-shadow: 1px 1px 15px 5px rgb(124, 202, 209);
 
 }
 
 .conteiner-titulo {
-    
+    top: 1vh;
     position: relative;
-    font-weight: 400;
+    font-weight: 200;
     align-self: center;
-    font-size: 14px;
+    font-size: 0.8rem;
+    text-align: center;
     
 }
 
 .conteiner-display {
-    
+    left: 1.5vw;
+    padding: 2%;
+    text-align: right;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     position: relative;
-    width: 595px;
-    height: 50px;
+    width: 95vw;
+    height: 9vh;
     border-style: solid;
     border-width: 0.1mm;
     border-color: rgb(97, 96, 96);
     border-radius: 1%;
     background-color: rgb(16, 19, 19);
-    color: white;
     font-weight: 800;
-    font-size: 25px;
+    font-size: 1.7rem;
 }
-.conteiner-display #resultado {
+
+.conteiner-teclado  {
+    left: 1vw;
     position: relative;
-    text-align: end;
-    right: 5px;
-    top: 10px;
-}
-
-.conteiner-botoes {
-    position: relative;
-    border-style: solid;
-    border-width: 0.5mm;
-    border-color: grey;
-    border-radius: 1%;
-    width: 120px;
-    height: 60px;
-    background-color: rgb(50, 59, 59);
-    font-weight: 300;
-    font-size: 50px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    cursor: pointer;
-    
-    
-}
-
-.conteiner-botoes:hover {
-
-    border-color: rgb(61, 203, 247);
-
+    display: flex;
+    flex-flow: row wrap;
+    width: 96vw;
+    height: 50vh;
 }
 
 .conteiner-botao {
+    color: white;
     position: relative;
-    top: 5px;
+    border-style: solid;
+    border-width: 0.3mm;
+    border-color: grey;
+    border-radius: 0.7mm;
+    width: 20vw;
+    height: 10vh;
+    background-color:rgb(58, 58, 61);
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-transform: uppercase;
 }
+
+.conteiner-botao:hover {
+
+    border-color: rgb(69, 175, 207);
+
+}
+
+#stretch {
+    flex-grow: 1;
+    
+}
+
+#btn-igual {
+    flex-grow: 1;
+    height: 20vh;
+}
+
+#btn-zero {
+    align-self: stretch;
+    flex-grow: 0.358;
+}
+
+#last-child>*:last-child {
+    align-self: stretch;
+}
+
+#btn-zero, #btn-virgula {
+    position: relative;
+    bottom: 10vh;
+}
+
 
